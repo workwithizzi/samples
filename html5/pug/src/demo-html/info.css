@@ -1,0 +1,76 @@
+h1::after {
+	content: "<h1>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h2::after {
+	content: "<h2>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h3::after {
+	content: "<h3>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h4::after {
+	content: "<h4>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h5::after {
+	content: "<h5>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h6::after {
+	content: "<h6>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+p::after {
+	content: "<p>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+p.o-intro::after {
+	content: '<p class="o-intro">';
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+caption::after {
+	content: "<caption>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+legend::after {
+	content: "<legend>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+label::after {
+	content: "<label>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}

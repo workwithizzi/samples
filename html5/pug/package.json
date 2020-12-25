@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"images": "cp -r src/images build",
+		"demo": "pug -P src/demo-html -o build",
+		"index": "pug -P src/index.pug -o build",
+		"dev": "yarn run images && yarn run demo && yarn run index"
+	},
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

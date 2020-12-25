@@ -1,0 +1,36 @@
+
+<p>The &lt;select&gt; element is used in a form to create a drop-down list. Use &lt;option&gt; tags inside the &lt;select&gt; element define the available options in the list. The HTML &lt;optgroup&gt; element creates a grouping of options within a &lt;select&gt; element. If used, then make sure to also include the 'label' attribute.</p>
+<h4>Basic &lt;select&gt;</h4>
+<label for="fm-select1">Basic Select:
+  <select id="fm-select1" name="fm-select1">
+    <optgroup label="Templating Engines">
+      <option value="mustache">Mustache</option>
+      <option value="handlebars">Handlebars</option>
+      <option value="pug">Pug</option>
+      <option value="ejs">Embedded JS</option>
+    </optgroup>
+  </select>
+</label>
+<h4>&lt;select&gt; With Default Option Selected</h4>
+<label for="fm-select2">Pre-Selected Option:
+  <select id="fm-select2" name="fm-select2">
+    <optgroup label="JS Preprocessors">
+      <option value="coffeescript">Coffeescript</option>
+      <option value="typescript" selected="selected">Typescript</option>
+      <option value="livescript">Livescript</option>
+      <option value="babel">Babel</option>
+    </optgroup>
+  </select>
+</label>
+<h4>&lt;select&gt; With Multiple-Select Option</h4>
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+<label for="fm-select3">Multiple-Select Option:
+  <select id="fm-select3" name="fm-select3" multiple="multiple">
+    <optgroup label="CSS Preprocessors">
+      <option value="sass">SASS</option>
+      <option value="less">LESS</option>
+      <option value="stylus">Stylus</option>
+      <option value="postcss">PostCSS</option>
+    </optgroup>
+  </select>
+</label>

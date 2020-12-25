@@ -1,0 +1,17 @@
+//- Media - Video
+//- -----------------------------------------------------------------
+
+
+-var demoVideo= izziDemoCDN + "video/cars";
+
+//- ---------------
+
+video(poster=demoVideo + ".png" id="player" playsinline="" controls="")
+	source(src=demoVideo + ".mp4" type="video/mp4")
+	source(src=demoVideo + ".webm" type="video/webm")
+
+	//- Captions are optional
+	track(kind="captions" label="English captions" srclang="en" src=demoVideo + ".vtt" default="")
+
+	//- Fallback for browsers that don't support the <video> element
+	a(href=demoVideo + ".mp4" download="") Download

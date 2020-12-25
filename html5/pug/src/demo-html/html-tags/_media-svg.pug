@@ -1,0 +1,17 @@
+//- Media - SVG
+//- -----------------------------------------------------------------
+
+include ../../_vars
+
+h4 Inline SVG
+
+include ../../images/html5.svg
+
+//- ---------------
+
+h4 Linked SVG
+
+if useExternalImages
+	img(src=izziDemoCDN + 'img/html5.svg' alt='HTML5 Logo')
+else
+	img(src='images/html5.svg' alt='HTML5 Logo')

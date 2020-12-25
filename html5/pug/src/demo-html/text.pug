@@ -1,0 +1,76 @@
+//- Demo Text Content
+//- -----------------------------------------------------------------
+
+extends ../partials/_base
+
+block title
+	title HTML Text Elements
+
+block append styles
+	style
+		include info.css
+
+//- -----------------------------------
+//- Page Main-Content Starts Here
+//- -----------------------------------
+block content
+	article
+		header
+			h1 Demo Text Elements
+
+			p.o-intro
+				| This page is good place to quickly reference the text style elements used within the project. This is what an intro paragraph looks like using the <code>#{'.o-intro'}</code> class.
+
+		hr
+
+		//- -----------------------------------
+		//- Text Styles
+		//- -----------------------------------
+		section
+			h2 Text
+
+			section
+				header: h3 Headings
+				include html-tags/_text-headings
+
+			hr
+
+			section
+				header: h3 Inline Elements
+				include html-tags/_text-inline_elements
+
+			hr
+
+			section
+				header: h3 Headings Follow By Paragraphs
+				include html-tags/_text-headings_paragraphs
+
+			hr
+
+			section
+				header: h3 Alignment Styles
+				include html-tags/_text-alignment
+
+			hr
+
+			section
+				header: h3 Blockquotes
+				include html-tags/_text-blockquotes
+
+			hr
+
+			section
+				header: h3 Lists
+				include html-tags/_text-lists
+
+			hr
+
+			section
+				header: h3 Preformatted Text
+				include html-tags/_text-preformatted
+
+			hr
+
+			section
+				header: h3 Table Data
+				include html-tags/_text-tables

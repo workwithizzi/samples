@@ -1,0 +1,78 @@
+//- Contains the html that is reused on most pages
+//- -----------------------------------------------------------------
+
+doctype html
+html.no-js(lang='en')
+
+	include ../_vars
+	//- -----------------------------------
+	//- Page Variables
+	//- -----------------------------------
+	block vars
+		- var metaDescription = site.meta.description;
+		- var metaKeywords = site.meta.keywords;
+		- var bodyClass = '';
+
+	//- -----------------------------------
+	//- Site Head
+	//- -----------------------------------
+	block head
+		head
+			meta(charset='utf-8')
+			meta(http-equiv='x-ua-compatible', content='ie=edge')
+			meta(name='viewport', content='width=device-width,initial-scale=1')
+
+			//- -----------------------------------
+			//- Site/Page Meta Title
+			//- -----------------------------------
+			block title
+				title Site Meta Title
+
+			meta(name='description', content=metaDescription)
+			meta(name='keywords', content=metaKeywords)
+
+			//- include _meta-imgs
+
+			//- -----------------------------------
+			//- Stylesheets
+			//- -----------------------------------
+			block styles
+				//- link(rel='stylesheet', href='/css/normalize.css')
+				//- link(rel='stylesheet', href='/css/main.css')
+
+	body(class=bodyClass)
+
+		//- -----------------------------------
+		//- Accessibility Skiplink
+		//- -----------------------------------
+		a.c-skiplink(href='#nav-main') Jump to main content.
+
+		//- -----------------------------------
+		//- Site Header/Nav
+		//- -----------------------------------
+		block header
+			include _header
+
+		main#nav-main(role='main')
+
+			//- -----------------------------------
+			//- Page Content
+			//- -----------------------------------
+			block content
+
+		//- -----------------------------------
+		//- Site Footer
+		//- -----------------------------------
+		block footer
+			include _footer
+
+		//- -----------------------------------
+		//- Scripts
+		//- -----------------------------------
+		//- Used for external scripts
+		block bottom-scripts-link
+			//- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+		//- used for scripts that are local to the project
+		block bottom-scripts-local
+			//- script(src='/js/nav.js')

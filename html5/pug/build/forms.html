@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Form Elements</title>
+    <meta name="description" content="This is the default meta description for the website.">
+    <meta name="keywords" content="default keywords, pug, html5, snippets">
+    <style>h1::after {
+	content: "<h1>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h2::after {
+	content: "<h2>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h3::after {
+	content: "<h3>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h4::after {
+	content: "<h4>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h5::after {
+	content: "<h5>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+h6::after {
+	content: "<h6>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+p::after {
+	content: "<p>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+p.o-intro::after {
+	content: '<p class="o-intro">';
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+caption::after {
+	content: "<caption>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+legend::after {
+	content: "<legend>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+label::after {
+	content: "<label>";
+	color: rgba(255, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.6);
+	margin-left: .2em;
+}
+
+    </style>
+  </head>
+  <body><a class="c-skiplink" href="#nav-main">Jump to main content.</a>
+    <header><a href="/"><img src="http://via.placeholder.com/150x150"></a>
+      <nav class="c-nav js-nav" role="navigation"></nav>
+      <div class="l-nav__toggle">
+        <button class="nav__toggle" id="js-toggle-menu" type="button" aria-expanded="false" aria-controls="main-menu">
+          <div class="nav__toggle--open"><span class="u_visuallyhidden">Open Menu</span><i class="fa fa-bars" aria-hidden="true"></i></div>
+          <div class="nav__toggle--close"><span class="u_visuallyhidden">Close Menu</span><i class="fa fa-times" aria-hidden="true"></i></div>
+        </button>
+        <ul id="main-menu"><li><a href=/ target='_blank'>Home</a></li><li><a href=/text.html target='_blank'>HTML Text Elements</a></li><li><a href=/media.html target='_blank'>HTML Media Elements</a></li><li><a href=/forms.html target='_blank'>HTML Form Elements</a></li>
+        </ul>
+      </div>
+    </header>
+    <main id="nav-main" role="main">
+      <article>
+        <header>
+          <h1>Demo Form Elements</h1>
+          <p class="o-intro">This page is good place to quickly reference the main style elements used within the project. This is what an intro paragraph looks like using the <code>.o-intro</code> class.</p>
+        </header>
+        <hr>
+        <section>
+          <h2>Forms</h2>
+          <section>
+            <header>
+              <h3>Meters & Progress</h3>
+            </header>
+            <p>The HTML &lt;meter&gt; element represents either a scalar value within a known range or a fractional value. By default, the meter is presented as an inline-block.</p>
+            <p>The HTML <code>&lt;progress&gt;</code> element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. By default, the meter is presented as an inline-block.</p>
+            <h4>Meter - Basic & Percentage</h4>
+            <meter value="2" min="0" max="10">2 out of 10</meter>
+            <meter value="0.6">60%</meter>
+            <h4>Meter - High & Low Range</h4>
+            <meter low="69" high="80" max="100" value="84">You get a B!</meter>
+            <h4>Progress - Indeterminate</h4>
+            <progress>Indeterminate</progress>
+            <progress max="10">Indeterminate</progress>
+            <h3>Progress - 70%. If 'max' Attribute is Omitted, Then Default is 1</h3>
+            <progress value="7" max="10">70%</progress>
+            <progress value=".7">70%</progress>
+          </section>
+          <hr>
+          <section>
+            <header>
+              <h3>Fieldset & Legend</h3>
+            </header>
+            <p>You can use &lt;fieldset&gt; to group related elements in a form. By default, this tag draws a box around it's child elements. Use the &lt;legend&gt; to define a caption for the &lt;fieldset&gt; element. &lt;legend&gt; is not required, but can only be used within the &lt;fieldset&gt; and has to be it's first-child.</p>
+            <h4>With Fieldset & Legend</h4>
+            <form>
+              <fieldset>
+                <legend>This is a Legend</legend>
+                <label for="fm-tx1">Text Input: <abbr title="required">*</abbr>
+                  <input id="fm-tx1" type="text" name="fm-tx1" placeholder="Text Input" required>
+                </label><br>
+                <label for="fm-pswd1">Password: <abbr title="required">*</abbr>
+                  <input id="fm-pswd1" type="password" name="fm-pswd1" placeholder="Password" required>
+                </label>
+              </fieldset>
+            </form>
+            <h4>With Just Fieldset</h4>
+            <form>
+              <fieldset>
+                <label for="fm-txt2">Text Input:
+                  <input id="fm-txt2" type="text" name="fm-txt2" placeholder="Text Input">
+                </label><br>
+                <label for="fm-pswd2">Password:
+                  <input id="fm-pswd2" type="password" name="fm-pswd2" placeholder="Password">
+                </label>
+              </fieldset>
+            </form>
+            <h4>Without Fieldset or Legend</h4>
+            <form>
+              <label for="fm-txt3">Text Input:
+                <input id="fm-txt3" type="text" name="fm-txt3" placeholder="Text Input">
+              </label><br>
+              <label for="fm-pswd3">Password:
+                <input id="fm-pswd3" type="password" name="fm-pswd3" placeholder="Password">
+              </label>
+            </form>
+          </section>
+          <hr>
+          <section>
+            <header>
+              <h3>Inputs Fields</h3>
+            </header>
+            <p>The &lt;input&gt; element is the most important form element. It can be displayed in many ways, depending on the type attribute that is given.</p>
+            <form>
+              <fieldset>
+                <legend>Input Field Types</legend>
+                <label for="fm-txt5">Text Input:
+                  <input id="fm-txt5" type="text" name="fm-txt5" placeholder="Text Input">
+                </label><br>
+                <label for="fm-pswd5">Password:
+                  <input id="fm-pswd5" type="password" name="fm-pswd5" placeholder="Password">
+                </label><br>
+                <label for="fm-url1">Web Address:
+                  <input id="fm-url1" type="url" name="fm-url1" placeholder="yoursite.com">
+                </label><br>
+                <label for="fm-email1">Email Address:
+                  <input id="fm-email1" type="email" name="fm-email1" placeholder="name@hotmail.com">
+                </label><br>
+                <label for="fm-tel1">Phone Number:
+                  <input id="fm-tel1" type="tel" name="fm-tel1" placeholder="555-867-5309">
+                </label><br>
+                <label for="fm-search1">Search:
+                  <input id="fm-search1" type="search" name="fm-search1" placeholder="Enter Search">
+                </label><br>
+                <label for="fm-num1">Number Input:
+                  <input id="fm-num1" type="number" name="fm-num1" placeholder="Enter a Number">
+                </label><br>
+                <label for="fm-mmnum1">Min/Max Number (5-10):
+                  <input id="fm-mmnum1" type="number" name="fm-mmnum1" min="5" max="10">
+                </label><br>
+                <label for="fm-color1">Color Input:
+                  <input id="fm-color1" type="color" name="fm-color1" value="#ff0000">
+                </label><br>
+                <label for="fm-date1">Date Input:
+                  <input id="fm-date1" type="date" name="fm-date1">
+                </label><br>
+                <label for="fm-datetime1">Datetime Input:
+                  <input id="fm-datetime1" type="datetime-local" name="fm-datetime1">
+                </label><br>
+                <label for="fm-time1">Time Input:
+                  <input id="fm-time1" type="time" name="fm-time1">
+                </label><br>
+                <label for="fm-week1">Week Input:
+                  <input id="fm-week1" type="week" name="fm-week1">
+                </label><br>
+                <label for="fm-month1">Month and Year Input:
+                  <input id="fm-month1" type="month" name="fm-month1">
+                </label><br>
+                <label for="fm-range1">Range Input:
+                  <input id="fm-range1" type="range" name="fm-range1" min="0" max="10">
+                </label><br>
+                <label for="fm-dstxt2">Disabled Text Input:
+                  <input id="fm-dstxt2" type="text" name="fm-dstxt2" placeholder="Text Input" disabled>
+                </label><br>
+                <label for="fm-rotxt2">Readonly Text Input:
+                  <input id="fm-rotxt2" type="text" name="fm-rotxt2" placeholder="Text Input" readonly>
+                </label>
+              </fieldset>
+            </form>
+          </section>
+          <hr>
+          <section>
+            <header>
+              <h3>Select</h3>
+            </header>
+            <p>The &lt;select&gt; element is used in a form to create a drop-down list. Use &lt;option&gt; tags inside the &lt;select&gt; element define the available options in the list. The HTML &lt;optgroup&gt; element creates a grouping of options within a &lt;select&gt; element. If used, then make sure to also include the 'label' attribute.</p>
+            <h4>Basic &lt;select&gt;</h4>
+            <label for="fm-select1">Basic Select:
+              <select id="fm-select1" name="fm-select1">
+                <optgroup label="Templating Engines">
+                  <option value="mustache">Mustache</option>
+                  <option value="handlebars">Handlebars</option>
+                  <option value="pug">Pug</option>
+                  <option value="ejs">Embedded JS</option>
+                </optgroup>
+              </select>
+            </label>
+            <h4>&lt;select&gt; With Default Option Selected</h4>
+            <label for="fm-select2">Pre-Selected Option:
+              <select id="fm-select2" name="fm-select2">
+                <optgroup label="JS Preprocessors">
+                  <option value="coffeescript">Coffeescript</option>
+                  <option value="typescript" selected>Typescript</option>
+                  <option value="livescript">Livescript</option>
+                  <option value="babel">Babel</option>
+                </optgroup>
+              </select>
+            </label>
+            <h4>&lt;select&gt; With Multiple-Select Option</h4>
+            <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+            <label for="fm-select3">Multiple-Select Option:
+              <select id="fm-select3" name="fm-select3" multiple>
+                <optgroup label="CSS Preprocessors">
+                  <option value="sass">SASS</option>
+                  <option value="less">LESS</option>
+                  <option value="stylus">Stylus</option>
+                  <option value="postcss">PostCSS</option>
+                </optgroup>
+              </select>
+            </label>
+          </section>
+          <hr>
+          <section>
+            <header>
+              <h3>Checkboxes</h3>
+            </header>
+            <p>&lt;input&gt; elements of type checkbox are rendered by default as square boxes that are checked (ticked) when activated, like you might see in an official government paper form. They allow you to select single values for submission in a form (or not).</p>
+            <p>Make sure to include a value attribute with your checkbox if you need something other than the value of 'on' to be sumbitted with the checkbox's name to the server. 'on' is the default value when the value attribute is omitted.</p>
+            <h4>Basic Checkbox</h4>
+            <form>
+              <label for="fm-basicchk1">Checkbox:
+                <input id="fm-basicchk1" type="checkbox" name="fm-basicchk1" value="isChecked">
+              </label><br>
+              <button type="submit">Submit</button>
+            </form>
+            <h4>Basic Checkbox with Default</h4>
+            <form>
+              <fieldset>
+                <legend>Default Checkbox</legend>
+                <label for="fm-defchk1">Checkbox:
+                  <input id="fm-defchk1" type="checkbox" name="fm-defchk1" value="isChecked" checked>
+                </label><br>
+                <label for="fm-defchk2">Checkbox:
+                  <input id="fm-defchk2" type="checkbox" name="fm-defchk2" value="isChecked">
+                </label><br>
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
+            <h4>Multiple Checkboxes</h4>
+            <form>
+              <fieldset>
+                <legend>Choose your interests</legend>
+                <label for="fm-chk1">Coding:
+                  <input id="fm-chk1" type="checkbox" name="interest" value="coding">
+                </label><br>
+                <label for="fm-chk2">Music:
+                  <input id="fm-chk2" type="checkbox" name="interest" value="music">
+                </label><br>
+                <label for="fm-chk3">Art:
+                  <input id="fm-chk3" type="checkbox" name="interest" value="art">
+                </label><br>
+                <label for="fm-chk4">Other:
+                  <input id="fm-chk4" type="checkbox" name="interest" value="other">
+                </label>
+                <input id="fm-chk4Other" type="text" name="other"><br>
+                <button type="submit">Submit Form</button>
+              </fieldset>
+            </form>
+            <script>
+              var otherCheckbox = document.querySelector('input[value="other"]');
+              var otherText = document.querySelector('input[id="fm-chk4Other"]');
+              otherText.style.visibility = 'hidden';
+              otherCheckbox.onchange = function() {
+              	if(otherCheckbox.checked) {
+              		otherText.style.visibility = 'visible';
+              		otherText.value = '';
+              	} else {
+              		otherText.style.visibility = 'hidden';
+              	}
+              };
+            </script>
+          </section>
+          <hr>
+          <section>
+            <header>
+              <h3>Radio Inputs</h3>
+            </header>
+            <p>&lt;input&gt; elements of type radio are generally used in radio groups—collections of radio buttons describing a set of related options. Only one radio button in a given group can be selected at the same time. Radio buttons are typically rendered as small circles, which are filled or highlighted when selected.</p>
+            <form>
+              <fieldset>
+                <legend>Please select your preferred contact method:</legend>
+                <label for="fm-rdio1">Music:
+                  <input id="fm-rdio1" type="radio" name="contact" value="email">
+                </label>
+                <label for="fm-rdio2">Phone:
+                  <input id="fm-rdio2" type="radio" name="contact" value="phone" checked>
+                </label>
+                <label for="fm-rdio3">Mail:
+                  <input id="fm-rdio3" type="radio" name="contact" value="mail">
+                </label><br>
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </section>
+          <hr>
+          <section>
+            <header>
+              <h3>Textareas</h3>
+            </header>
+            <p>The &lt;textarea&gt; tag defines a multi-line text input control.</p>
+            <form>
+              <fieldset>
+                <legend>Textareas</legend>
+                <label for="fm-txt1">Textarea
+                  <textarea id="fm-txt1" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                </label>
+              </fieldset>
+            </form>
+          </section>
+          <hr>
+          <section>
+            <header>
+              <h3>Buttons</h3>
+            </header>
+            <p>The &lt;button&gt; tag defines a clickable button. Inside a &lt;button&gt; element you can put content, like text or images. This is the difference between this element and buttons created with the &lt;input&gt; element.</p>
+            <p>Tip: Always specify the type attribute for a &lt;button&gt; element. Different browsers use different default types for the &lt;button&gt; element.</p>
+            <fieldset>
+              <legend>Default HTML5 Buttons</legend>
+              <button>Button</button><br>
+              <button type="button">Button Button</button>
+              <button type="submit">Button Submit</button>
+              <button type="reset">Button Reset</button>
+              <button type="button" disabled>Button Disabled</button><br>
+              <input type="button" value="Input Button">
+              <input type="submit" value="Input Submit">
+              <input type="reset" value="Input Reset">
+              <input type="button" value="Input Disabled" disabled>
+            </fieldset>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <nav class="c-nav js-nav" role="navigation"></nav>
+      <div class="l-nav__toggle">
+        <button class="nav__toggle" id="js-toggle-menu" type="button" aria-expanded="false" aria-controls="main-menu">
+          <div class="nav__toggle--open"><span class="u_visuallyhidden">Open Menu</span><i class="fa fa-bars" aria-hidden="true"></i></div>
+          <div class="nav__toggle--close"><span class="u_visuallyhidden">Close Menu</span><i class="fa fa-times" aria-hidden="true"></i></div>
+        </button>
+        <ul id="main-menu"><li><a href=/ target='_blank'>Home</a></li><li><a href=/text.html target='_blank'>HTML Text Elements</a></li><li><a href=/media.html target='_blank'>HTML Media Elements</a></li><li><a href=/forms.html target='_blank'>HTML Form Elements</a></li>
+        </ul>
+      </div>
+      <p>© Footer Copyright</p>
+    </footer>
+  </body>
+</html>
